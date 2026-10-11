@@ -108,8 +108,19 @@ st.markdown("""
 
 /* Warning boxes */
 .stAlert {
-    border-radius: 11px;
+    border-radius: 11px !important;
 }
+
+div[data-testid="stAlert"][data-baseweb="notification"] {
+    background-color: #fef3c7 !important;
+    color: #78350f !important;
+    border: 1px solid #f59e0b !important;
+}
+
+div[data-testid="stAlert"] p {
+    color: #78350f !important;
+}
+
 
 /* Footer */
 footer {
