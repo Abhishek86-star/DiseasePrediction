@@ -51,10 +51,28 @@ st.markdown("""
     font-weight: 600 !important;
 }
 
-/* Input fields */
-.stNumberInput input {
-    background: #ffffff !important;
+
+/* Input fields - desktop and mobile */
+.stNumberInput input,
+.stNumberInput input[type="number"] {
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+    -webkit-text-fill-color: #1e293b !important;
+    caret-color: #1e293b !important;
     border-radius: 10px !important;
+    opacity: 1 !important;
+}
+
+/* Input field container */
+.stNumberInput [data-baseweb="input"] {
+    background-color: #ffffff !important;
+}
+
+/* Input labels */
+.stNumberInput label {
+    color: #334155 !important;
+}
+
 }
 
 /* Predict button */
@@ -217,7 +235,7 @@ if btn:
     </div>
     """, unsafe_allow_html=True)
 
-    st.balloons()
+    st.balloons()s
 
 # ---------------- Footer -----------------
 st.write("")
