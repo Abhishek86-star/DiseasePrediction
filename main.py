@@ -235,7 +235,7 @@ if btn:
     </div>
     """, unsafe_allow_html=True)
 
-    st.balloons()s
+    st.balloons()
 
 # ---------------- Footer -----------------
 st.write("")
